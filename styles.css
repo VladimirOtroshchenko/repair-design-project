@@ -129,3 +129,97 @@ main > section > input:nth-of-type(2) {
     height: 67px;
     margin: 200px auto;
 }
+
+.types_of_repair {
+    height: 1675px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.types_of_repair p:nth-child(1) {
+    width: 631px;
+    height: 130px;
+    display: flex;
+    margin: 300px 400px 0;
+}
+
+.types_of_repair form {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    width: 770px;
+    height: 70px;
+    margin: 100px auto 0;
+}
+
+.types_of_repair > form > input:nth-of-type(1) {
+    width: 320px;
+    height: 45px;
+}
+
+.types_of_repair > form > input:nth-of-type(2) {
+    width: 231px;
+    height: 45px;
+}
+
+.types_of_repair > form > input:nth-of-type(3) {
+    width: 200px;
+    height: 51px;
+    margin-top: 15px;
+}
+
+.types_of_repair > form > span {
+    width: 150px;
+}
+
+.types_of_repair p:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+}
+
+.types_of_repair > img:nth-of-type(1) {
+    margin-top: 150px;
+}
+
+.costs {
+    width: 1236px;
+    height: 608px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 31px auto 0;
+}
+
+.costs > figure {
+    position: relative;
+}
+
+.costs figcaption {
+    width: 330px;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: gray;
+    position: absolute;
+    left: 8%;
+    bottom: 2%;
+}
+
+.costs p {
+    position: absolute;
+    left: 8%;
+    top: 92%;
+    color: green;
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}

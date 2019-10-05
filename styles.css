@@ -10,7 +10,7 @@
 /* default styles reset */
 
 .container {
-    width: 1438px;
+    width: 1440px;
     margin: 0 auto;
     background: red;
 }
@@ -31,7 +31,6 @@ header {
 
 .nav div {
     height: 37px;
-    width: 1438px;
 }
 
 .nav > ul {
@@ -48,26 +47,85 @@ main {
 .background:nth-of-type(2) {
     display: flex;
     flex-direction: column;
-    background: url(assets/img/instagram_bg.svg) no-repeat;
+    background:  #131313;
+    position: relative;
+}
+
+.background:nth-of-type(2) > img:nth-of-type(1) {
+    color: #E3B873;
+    position: absolute;
+    top: 30%;
+    left: 2%;
 }
 
 main > section:nth-of-type(1) {
-    height: 707px;
+    height: 755px;
     background: url(assets/img/photo1.svg) no-repeat;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    padding-left: 80px;
+    padding-left: 90px;
 }
 
-main > section > input:nth-last-of-type(1) {
+main > section > input:nth-of-type(1) {
     width: 207px;
     height: 51px;
     margin-top: 30px;
 }
 
-main > section > input:nth-last-of-type(2) {
+main > section > input:nth-of-type(2) {
     width: 207px;
     height: 51px;
+    margin-top: 30px;
+}
+
+.completed_projects {
+    height: 1241px;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.completed_projects ul {
+    width: 623px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+    margin-left: 550px;
+}
+
+.background:nth-of-type(3) {
+    background:  #131313;
+}
+
+.completed_projects div:nth-of-type(1) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.completed_projects > div div:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 390px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.completed_projects > div div:nth-of-type(2) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 70px;
+}
+
+.completed_projects > img {
+    width: 196px;
+    height: 67px;
+    margin: 200px auto;
 }

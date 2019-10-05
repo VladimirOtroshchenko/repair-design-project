@@ -356,3 +356,57 @@ main > section > input:nth-of-type(2) {
     right: 2%;
 }
 
+.background:nth-of-type(7) {
+    background: gray;
+}
+
+.design_project {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.design_project p {
+    margin: 30px auto 0;
+}
+
+.projects {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.design_project figure {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.background:nth-of-type(8) {
+    background: #131313;
+}
+
+.our_team {
+    height: 1615px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.our_team div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.our_team > div:nth-of-type(1) {
+    padding-top: 400px;
+    width: 337px;
+}
+
+.our_team > div:nth-of-type(2) {
+    width: 760px;
+    height: 420px;
+}

@@ -74,6 +74,7 @@ header {
     color: white;
     font-family: 'FuturaDemiC';
     font-size: 14px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -143,7 +144,7 @@ main > section:nth-of-type(1) > h2 > span {
     color: #E3B873;
 }
 
-main > section:nth-of-type(1) p {
+main > section:nth-of-type(1) > p:nth-of-type(1) {
     font-family: 'FuturaBookC';
     font-size: 1.2em;
     line-height: 1.6em;
@@ -192,64 +193,102 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     height: 29px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.scroll_down p {
+.scroll_down form p {
     text-transform: uppercase;
     font-family: 'Yeseva One';
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .completed_projects {
-    height: 1241px;
+    height: 1000px;
     background: #131313;
     display: flex;
     flex-direction: column;
     color: white;
+    position: relative;
 }
 
-.completed_projects ul {
-    width: 623px;
+.completed_projects > ul {
+    width: 680px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     font-family: "Yeseva One";
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: normal;
-    margin-left: 550px;
+    text-transform: uppercase;
+    margin: 20px 0 0 405px;
+}
+
+.completed_projects > ul > li:nth-of-type(1) {
+    text-decoration: underline;
+    color: #E3B873;
 }
 
 .background:nth-of-type(3) {
     background:  #131313;
 }
 
-.completed_projects div:nth-of-type(1) {
+.projects_with_photos {
     display: flex;
-    flex-wrap: nowrap;
-    margin-top: 50px;
+    margin-top: 40px;
+    text-align: left;
 }
 
-.completed_projects > div div:nth-of-type(1) {
+.projects_with_photos > div:nth-of-type(1) {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
     height: 390px;
-    text-align: left;
     justify-content: space-between;
 }
 
-.completed_projects > div div:nth-of-type(2) {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin-top: 70px;
+.projects_with_photos > div:nth-of-type(1) > h2 {
+    font-family: 'Yeseva One';
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: normal;
 }
 
-.completed_projects > img {
+.projects_with_photos > div:nth-of-type(1) > p {
+    font-family: 'FuturaBookC';
+    line-height: 1.5em;
+}
+
+.projects_with_photos > div:nth-of-type(1) > p > span {
+    font-family: 'Yeseva One';
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.projects_with_photos > div:nth-of-type(1) > p:nth-of-type(5) {
+    width: 185px;
+}
+
+.projects_with_photos > div:nth-of-type(2) {
+    display: flex;
+    align-items: flex-start;
+}
+
+.completed_projects > img:nth-of-type(1) {
     width: 196px;
     height: 67px;
-    margin: 200px auto;
+    margin: 20px auto;
+}
+
+.completed_projects > iframe {
+    margin: 0 auto;
+    position: absolute;
+    top: 78%;
+    left: 18%;
 }
 
 .background:nth-of-type(4) {
@@ -263,11 +302,19 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     flex-direction: column;
 }
 
-.types_of_repair p:nth-child(1) {
-    width: 631px;
+.types_of_repair > img:nth-of-type(1) {
+    padding-top: 130px;
+}
+
+.types_of_repair > p:nth-of-type(1) {
+    width: 700px;
     height: 130px;
     display: flex;
-    margin: 300px 400px 0;
+    margin: 30px auto;
+    font-family: 'FuturaBookC';
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 1.3em;
 }
 
 .types_of_repair form {

@@ -5,15 +5,15 @@
 }
 
 @font-face {
-    font-family: "FuturaDemiC";
-    src: url('assets/fonts/FuturaDemiC.woff2') format("woff2"),
-         url('assets/fonts/FuturaDemiC.woff') format("woff");
+    font-family: "Yeseva One";
+    src: url('assets/fonts/YesevaOne.woff2') format("woff2"),
+         url('assets/fonts/YesevaOne.woff') format("woff");
 }
 
 @font-face {
-    font-family: "FuturaDemiC";
-    src: url('assets/fonts/FuturaDemiC.woff2') format("woff2"),
-         url('assets/fonts/FuturaDemiC.woff') format("woff");
+    font-family: "FuturaBookC";
+    src: url('assets/fonts/FuturaBookC.woff2') format("woff2"),
+         url('assets/fonts/FuturaBookC.woff') format("woff");
 }
 
 @font-face {
@@ -41,18 +41,20 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
+    border: none;
 }
 
 /* default styles reset */
 
 .container {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     background: red;
 }
 
 .content {
-    width: 1240px;
+    width: 1256px;
     margin: 0 auto;
 }
 
@@ -61,56 +63,141 @@
 }
 
 header {
-    height: 83px;
     background: #131313;
 }
 
-.nav div {
-    height: 37px;
-}
-
 .nav > ul {
+    height: 83px;
     display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     font-family: 'FuturaDemiC';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav ul a {
+    color: white;
+}
+
+.nav > ul > li:nth-of-type(1) > a {
+    color: #E3B873;
+}
+
+.nav > ul > li:nth-of-type(8) {
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+
+.nav > ul > li > a:active {
+    color: #E3B873;
+}
+
+.nav input {
+    width: 161px;
+    height: 37px;
+    font-family: 'FuturaDemiC';
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #E3B873;
+    border-radius: 3px;
 }
 
 .background:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     background:  #131313;
-    position: relative;
 }
 
-.background:nth-of-type(2) > img:nth-of-type(1) {
+main > section:nth-of-type(1) > img:nth-of-type(1) {
     color: #E3B873;
     position: absolute;
     top: 30%;
-    left: 2%;
+    right: 102%;
 }
 
 main > section:nth-of-type(1) {
-    height: 755px;
+    height: 800px;
     background: url(assets/img/photo1.svg) no-repeat;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    padding-left: 90px;
+    padding: 0 0 140px 60px;
+    position: relative;
 }
 
-main > section > input:nth-of-type(1) {
+main > section:nth-of-type(1) h2 {
+    font-family: "Yeseva One";
+    font-weight: normal;
+    font-size: 2.3em;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main > section:nth-of-type(1) > h2 > span {
+    color: #E3B873;
+}
+
+main > section:nth-of-type(1) p {
+    font-family: 'FuturaBookC';
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+main > section:nth-of-type(1) > form {
+    width: 440px;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > section:nth-of-type(1) > form > input:nth-of-type(1) {
     width: 207px;
     height: 51px;
     margin-top: 30px;
+    background: #E3B873;
+    color: #FFFFFF;
+    border-radius: 4px;
 }
 
-main > section > input:nth-of-type(2) {
+main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     width: 207px;
     height: 51px;
     margin-top: 30px;
+    background: rgba(0, 0, 0, 0%);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.scroll_down {
+    width: 247px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 82%;
+    right: 87%;
+    background: #131313;
+}
+
+.scroll_down form {
+    width: 170px;
+    height: 29px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scroll_down p {
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    font-size: 0.8em;
 }
 
 .completed_projects {
@@ -127,7 +214,9 @@ main > section > input:nth-of-type(2) {
     align-items: flex-end;
     justify-content: space-around;
     color: white;
+    font-family: "Yeseva One";
     font-size: 18px;
+    font-weight: normal;
     margin-left: 550px;
 }
 

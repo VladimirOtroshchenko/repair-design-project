@@ -317,7 +317,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     font-size: 1.3em;
 }
 
-.types_of_repair form {
+.types_of_repair > form {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -325,10 +325,15 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     width: 770px;
     height: 70px;
     margin: 100px auto 0;
+    font-family: "FuturaBookC";    
+}
+
+.types_of_repair > form > input {
+    font-family: "FuturaBookC";
 }
 
 .types_of_repair > form > input:nth-of-type(1) {
-    width: 320px;
+    width: 250px;
     height: 45px;
 }
 
@@ -340,7 +345,16 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 .types_of_repair > form > input:nth-of-type(3) {
     width: 200px;
     height: 51px;
-    margin-top: 15px;
+    color: white;
+    background: #E3B873;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbox {
+    height: 15px;
+    width: 15px;
+    color: #E3B873;
 }
 
 .types_of_repair > form > span {
@@ -351,9 +365,17 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     display: flex;
     flex-direction: row;
     margin: 15px auto;
+    width: 280px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'FuturaBookC';
 }
 
 .types_of_repair > img:nth-of-type(1) {
+    margin-top: 150px;
+}
+
+.types_of_repair > img:nth-of-type(2) {
     margin-top: 150px;
 }
 
@@ -374,20 +396,39 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 .costs figcaption {
     width: 330px;
     height: 286px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: gray;
+    background: rgba(255, 255, 255, 0.85);
     position: absolute;
     left: 8%;
     bottom: 2%;
+    padding: 20px 0 0 35px;
+}
+
+.costs > figure > figcaption > h3 {
+    font-family: "Yeseva One";
+    font-size: 1.3em;
+    line-height: 1.7em;
+    color: #363636;
+}
+
+.costs > figure > figcaption > ul {
+    padding-left: 20px;
+}
+
+.costs > figure > figcaption > ul > li {
+    font-family: "FuturaBookC";
+    font-size: 1.1em;
+    line-height: 1.7em;
+    list-style: disc;
+    color: #959595;
 }
 
 .costs p {
     position: absolute;
     left: 8%;
     top: 92%;
-    color: green;
+    font-family: "Yeseva One";
+    color: #FFFFFF;
+    text-transform: uppercase;
     width: 228px;
     height: 54px;
     background: #E3B873;

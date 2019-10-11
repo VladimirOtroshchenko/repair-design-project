@@ -269,6 +269,10 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     line-height: 1.8em;
 }
 
+.slider {
+    overflow: hidden;
+}
+
 .projects_with_photos > div:nth-of-type(1) > p:nth-of-type(5) {
     width: 185px;
 }
@@ -446,12 +450,28 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     position: relative;
 }
 
-.building img {
-    position: absolute;
-    right: 48.6%;
+.building_bg {
+    width: 1006px;
+    height: 645px;
+    background: url(assets/img/building.svg) no-repeat;
 }
 
-.building > div {
+.ellipse {  
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: 
+       linear-gradient(#fff,#fff) padding-box,
+       linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+    border: 3px solid transparent;
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    right: 70%;
+    opacity: 0.4;
+}
+
+.building > div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     width: 509px;
@@ -468,31 +488,40 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     height: 47px;
     text-align: center;
     margin: 20px auto 0;
+    font-family: 'FuturaDemiC';
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #FFFFFF;
 }
 
 .building > div > form {
     margin: 30px auto 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 350px;
+    height: 370px;
 }
 
-.building > div > form > input:nth-of-type(1) {
-    width: 408px;
-    height: 50px;
-    background: #131313;
+.building > div > form > p {
+    font-family: 'FuturaBookC';
+    font-size: 1em;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 7%;
 }
 
-.building > div > form > input:nth-of-type(2) {
-    width: 408px;
-    height: 50px;
-    background: #131313;
+.building > div > form > p:nth-of-type(4) {
+    color: #FFFFFF;
+    line-height: 10px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.building > div > form > input:nth-of-type(3) {
+.building > div > form > input {
+    color: #FFFFFF;
+    border-bottom: 1px solid #959595;
     width: 408px;
-    height: 50px;
+    height: 40px;
     background: #131313;
 }
 
@@ -500,6 +529,34 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     width: 213px;;
     height: 50px;
     background: #E3B873;
+    margin: 8% 0 0 50%;
+    border-bottom: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    text-transform: uppercase;
+}
+
+.building > div > figure {
+    margin: 80px auto 0;
+    width: 441px;
+    height: 72px;
+    display: flex;
+}
+
+.building > div > figure > img {
+    padding: 15px;
+    border-radius: 50%;
+    background: #E3B873;
+}
+
+.building > div > figure > figcaption {
+    font-family: 'FuturaDemiC';
+    font-size: 20px;
+    line-height: 25px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .background:nth-of-type(6) {

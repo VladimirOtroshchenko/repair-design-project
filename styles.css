@@ -703,16 +703,16 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     margin: 5% 20% 0 0;
 }
 
-.projects span:nth-of-type(1) {
+.projects > figure:nth-of-type(1) > figcaption > span {
     margin-top: 9%;
 }
 
-.projects span:nth-of-type(2) {
-    margin-top: 20%;
+.projects > figure:nth-of-type(2) > figcaption > span {
+    margin-top: 11%;
 }
 
-.projects span:nth-of-type(3) {
-    margin-top: 30%;
+.projects > figure:nth-of-type(3) > figcaption > span {
+    margin-top: 13%;
 }
 
 .six_steps {
@@ -720,18 +720,87 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-top: 520px;
+    padding-top: 150px;
 }
 
 .six_steps > div:nth-of-type(1) {
     width: 337px;
+    height: 515px;
+}
+
+.six_steps > div:nth-of-type(1) > p:nth-of-type(1) {
+    font-family: 'FuturaDemiC';
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.six_steps > div:nth-of-type(1) > h2 {
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.six_steps > div:nth-of-type(1) > p:nth-of-type(2) {
+    font-family: 'Yeseva One';
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20%;
+}
+
+.six_steps > div:nth-of-type(1) > h4 {
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 4%;
+}
+
+.six_steps > div:nth-of-type(1) > p:nth-of-type(3) {
+    font-family: 'FuturaBookC';
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    margin-top: 5%;
 }
 
 .six_steps > div:nth-of-type(2) {
-    width: 760px;
-    height: 420px;
+    width: 765px;
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
+.six_steps > div:nth-of-type(2) > h4 {
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 7%;
+}
+
+.six_steps > div:nth-of-type(2) > p {
+    font-family: 'FuturaBookC';
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #FFFFFF;
+}
+
+.six_steps > div:nth-of-type(2) > img {
+    display: flex;
+}
 
 .our_team_and_clients {
     height: 1400px;

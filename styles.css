@@ -52,15 +52,19 @@
     margin: 0 auto;
     background: linear-gradient(to bottom, 
     rgb(19,19,19) 0%, 
-    rgb(19,19,19) 17.67%, 
-    rgb(255,255,255) 17.68%, 
-    rgb(255,255,255) 42.42%, 
-    rgb(19,19,19) 42%, 
-    rgb(19,19,19) 50.52%, 
-    rgb(255,255,255) 50%,
-    rgb(255,255,255) 57.2%,
-    rgb(19,19,19) 57%, 
-    rgb(19,19,19) 60%);
+    rgb(19,19,19) 18.98%, 
+    rgb(255,255,255) 18.98%, 
+    rgb(255,255,255) 45.6%, 
+    rgb(19,19,19) 45%, 
+    rgb(19,19,19) 54.37%, 
+    rgb(255,255,255) 50%, 
+    rgb(255,255,255) 61.49%, 
+    rgb(19,19,19) 59%, 
+    rgb(19,19,19) 78.4%, 
+    rgb(255,255,255) 76%,
+    rgb(255,255,255) 90%, 
+    rgb(19,19,19) 90%, 
+    rgb(19,19,19) 100%);
 }
 
 .content {
@@ -204,7 +208,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .completed_projects {
-    height: 1000px;
+    height: 995px;
     background: #131313;
     display: flex;
     flex-direction: column;
@@ -716,11 +720,11 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .six_steps {
-    height: 1655px;
+    height: 900px;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .six_steps > div:nth-of-type(1) {
@@ -767,28 +771,30 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 .six_steps > div:nth-of-type(1) > p:nth-of-type(3) {
     font-family: 'FuturaBookC';
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 1.6em;
     color: #FFFFFF;
     margin-top: 5%;
 }
 
 .six_steps > div:nth-of-type(2) {
     width: 765px;
-    height: 578px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-end;
+    position: relative;
+    margin-top: 4%;
 }
 
 .six_steps > div:nth-of-type(2) > h4 {
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 1.4em;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 7%;
+    text-decoration: underline;
 }
 
 .six_steps > div:nth-of-type(2) > p {
@@ -799,19 +805,47 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .six_steps > div:nth-of-type(2) > img {
-    display: flex;
+    position: absolute;
+    width: 765px;
+    height: 380px;
+    top: 100%;
+    right: 0%;
 }
 
 .our_team_and_clients {
-    height: 1400px;
+    height: 1700px;
     display: flex;
     flex-direction: column;
+}
+
+.our_team_and_clients > h2 {
+    margin: 0 auto;
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.our_team_and_clients > img {
+    margin: 2%;
+}
+
+.our_team_and_clients > p {
+    margin: 0 auto;
+    font-family: 'FuturaBookC';
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .our_team {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .our_team > figure {
@@ -820,6 +854,64 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     justify-content: space-between;
     margin: 0 auto;
     width: 272px;
+    position: relative;
+}
+
+.our_team > figure > img:nth-of-type(2) {
+    padding: 4%;
+    background: #E3B873;
+    position: absolute;
+    bottom: 92%;
+    right: 87%;
+    background: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.our_team > figure > figcaption {
+    text-align: center;
+    width: 233px;
+    height: 137px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 80%;
+    left: 7.5%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.our_team > figure > figcaption > h3 {
+    font-family: 'Yeseva One';
+    font-size: 1em;
+    line-height: 1.3em;
+    color: #181818;
+    padding-top: 8%;
+}
+
+.our_team > figure > figcaption > p:nth-of-type(1) {
+    font-family: 'FuturaBookC';
+    font-size: 1.1em;
+    line-height: 3em;
+    color: #959595;
+}
+
+.our_team > figure > figcaption > p:nth-of-type(2) {
+    font-family: 'Yeseva One';
+    font-size: 0.9em;
+    line-height: 3em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+}
+
+.our_team > p {
+    margin: 12% auto 0;
+    font-family: 'FuturaBookC';
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: center;
+    color: #363636;
 }
 
 .our_clients {
@@ -827,14 +919,142 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     margin-top: 10%;
 }
 
+.our_clients > h3 {
+    margin: 0 auto;
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.our_clients > img {
+    margin: 1.2% auto;
+    display: block;
+}
+
+.our_clients > p {
+    margin: 0 auto;
+    font-family: 'FuturaBookC';
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    color: #363636;
+}
+
 .clients {
-    width: 1236px;
-    height: 800px;
     display: flex;
     justify-content: space-between;
+    margin-top: 4%;
+}
+
+.clients > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 376px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.clients > div > h4 {
+    width: 190px;
+    height: 76px;
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    color: #181818;
+    display: flex;
+    align-items: center;
+    padding: 7% 0 0 3%;
+}
+
+.clients > div > p:nth-of-type(1) {
+    font-family: 'FuturaBookC';
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #959595;
+    width: 324px;
+    padding: 5% 0 0 6%;
+}
+
+.clients > div > img {
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    margin: 4% 0 0 6%;
+}
+
+.clients > div > p:nth-of-type(2) {
+    font-family: 'Yeseva One';
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 294px;
+    height: 54px;
+    margin-top: 13%;
+}
+
+.clients > div > p > span {
+    height: 54px;
+    border-left: 1px solid #FFFFFF;
+    width: 2px;
 }
 
 .questions_map {
-    height: 1170px;
-    background: #131313;
+    margin-top: 4%;
+    background: red;
+}
+
+.questions {
+    width: 883px;
+    height: 445px;
+    margin: 0 auto;
+    background: green;
+}
+
+.questions > h4 {
+    font-family: 'Yeseva One';
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.questions > form {
+    width: 520px;
+    height: 376px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.questions > form > p {
+    font-family: 'FuturaBookC';
+    font-size: 1em;
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.questions > form > input:nth-of-type(1) {
+    width: 231px;
+    height: 30px;
+}
+
+.questions > form > input:nth-of-type(2) {
+    width: 231px;
+    height: 30px;
 }

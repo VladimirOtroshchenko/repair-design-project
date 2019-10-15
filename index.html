@@ -13,14 +13,14 @@
                 <header>
                     <div class = 'nav'>
                         <ul>
-                            <li><h1>lC "repair design project"</h1></li>
+                            <li><a href="#"><h1>lC "repair design project"</h1></a></li>
                             <li><a href="#">home</a></li>
                             <li><a href="#">projects</a></li>
                             <li><a href="#">measurement</a></li>
                             <li><a href="#">team</a></li>
                             <li><a href="#">rewiews</a></li>
                             <li><a href="#">contacts</a></li>
-                            <li>+7 (928) 768-32-39</li>
+                            <li><a href='tel:+7(928)768-32-39'>+7 (928) 768-32-39</a></li>
                             <li><input type="submit" value="request a call"></li>
                         </ul>
                     </div>
@@ -35,7 +35,7 @@
                             <input type = 'button' value = 'CALCULATE THE COST'>
                             <input type = 'button' value = 'SUBMIT YOUR APPLICATION'>
                         </form>
-                        <img src='assets/img/innsta.svg' alt="">
+                        <a href="#"><img src='assets/img/innsta.svg' alt=""></a>
                         <div class = 'scroll_down'>
                             <form>
                                 <p>scroll down</p>
@@ -45,9 +45,9 @@
                     </section>
                     <section class = 'completed_projects'>
                         <ul>
-                            <li>Rostov-on-Don, Admiral</li>
-                            <li>Sochi Thieves</li>
-                            <li>Rostov-on-Don Patriotic</li>
+                            <li><a href="#">Rostov-on-Don, Admiral</a></li>
+                            <li><a href="#">Sochi Thieves</a></li>
+                            <li><a href="#">Rostov-on-Don Patriotic</a></li>
                         </ul>
                         <div class = 'projects_with_photos'>
                             <div>
@@ -59,11 +59,19 @@
                                 <p><span>city:</span><br>Rostov-on-Don<br>lcd admiral</p>
                                 <p><span>apartment area:</span><br>81 m2</p> 
                                 <p><span>repair time:</span><br>3.5 month</p>                                
-                                <p><span>repair cost:</span><br>Upon request</p>                                
+                                <p><span>repair cost:</span><br>Upon request</p> 
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/arrow_left.svg" alt=""></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"><img src="assets/img/arrow_right.svg" alt=""></a></li>
+                                </ul>                               
                             </div>
                             <div class = 'slider'>
                                 <img src='assets/img/design.svg' alt=''>
                                 <img src='assets/img/designhalf2.svg' alt=''>
+                                <a href="#"><img src="assets/img/Stroke.svg" alt=""></a>
                             </div>
                         </div>
                         <img src='assets/img/online_control.svg' alt=''>
@@ -80,13 +88,14 @@
                             from one of our facilities!<br>Leave a request below 
                             and you will receive a link to the broadcast.</p>
                         <form>
-                            <span>Name</span>
-                            <input type="text" value = "what is your name:"/>
-                            <span>Phone</span>
-                            <input type="text" value = "your phone number:"/>
-                            <input type="submit" value = "submit"/><br>
-                        </form>
-                        <p><input type="checkbox" value = 'I agree' class = 'checkbox'/>I agree to the processing of personal data</p>
+                            <label>Name <input type="text" required value="What is your name:"></label>
+                            <label>Phone <input type="text" required value="Your phone number:"></label>                            
+                            <label><input type="submit" value="Submit"></label>
+                            <label class="checkbox">I agree to the processing of personal data
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                             </label>
+                        </form>                        
                         <img src='assets/img/types_of_repair.svg' alt=""> 
                         <div class = 'costs'>
                             <figure>
@@ -152,14 +161,10 @@
                         <div>
                             <h3>Leave a request for free departure of the measurer</h3>
                             <form>
-                                <p>name</p>
-                                <input type="text" value="what is your name:">
-                                <p>phone</p>
-                                <input type="text" value="your phone number:">
-                                <p>email</p>
-                                <input type="text" value="your email">
-                                <p><input type="checkbox" value = 'I agree'/>I agree to the processing of personal data</p>
-                                <input type="submit" value="Call the measurer">
+                                <label>Name <input type="text" required value="What is your name:"></label>
+                                <label>Phone <input type="text" required value="Your phone number:"></label>
+                                <label><input type="checkbox">I agree to the processing of personal data</label>
+                                <label><input type="submit" value="Submit"></label>
                             </form>
                             <figure>
                                 <img src='assets/img/pig.svg' alt="">

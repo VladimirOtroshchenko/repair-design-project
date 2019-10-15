@@ -88,21 +88,36 @@ header {
     text-transform: uppercase;
 }
 
-.nav ul a {
+.nav > ul > li > a {
     color: white;
+}
+
+
+.nav > ul > li > a:hover {
+    transform: scale(1.2);
+    font-size: 1.1em;
+    color: #E3B873;
+}
+
+.nav > ul > li > a:active {
+    font-size: 1.1em;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 1%;
 }
 
 .nav > ul > li:nth-of-type(1) > a {
     color: #E3B873;
 }
 
-.nav > ul > li:nth-of-type(8) {
-    color: #E3B873;
-    text-decoration-line: underline;
+.nav > ul > li > a > h1 {
+    font-weight: normal;
+    font-size: 1em;
 }
 
-.nav > ul > li > a:active {
+.nav > ul > li:nth-of-type(8) > a {
     color: #E3B873;
+    text-decoration-line: underline;
 }
 
 .nav input {
@@ -113,14 +128,19 @@ header {
     color: #FFFFFF;
     text-transform: uppercase;
     background: #E3B873;
-    border-radius: 3px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
 }
 
-main > section:nth-of-type(1) > img:nth-of-type(1) {
+main > section:nth-of-type(1) > a > img:nth-of-type(1) {
     color: #E3B873;
     position: absolute;
     top: 30%;
     right: 102%;
+}
+
+main > section:nth-of-type(1) > a > img:nth-of-type(1):hover {
+    transform: scale(1.2);
 }
 
 main > section:nth-of-type(1) {
@@ -131,7 +151,7 @@ main > section:nth-of-type(1) {
     flex-direction: column;
     color: white;
     justify-content: center;
-    padding: 0 0 140px 60px;
+    padding: 0 0 12% 6%;
     position: relative;
 }
 
@@ -162,6 +182,10 @@ main > section:nth-of-type(1) > form {
     justify-content: space-between;
 }
 
+main > section:nth-of-type(1) > form > input {
+    font-size: 0.85em;
+}
+
 main > section:nth-of-type(1) > form > input:nth-of-type(1) {
     width: 207px;
     height: 51px;
@@ -169,6 +193,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(1) {
     background: #E3B873;
     color: #FFFFFF;
     border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 }
 
 main > section:nth-of-type(1) > form > input:nth-of-type(2) {
@@ -193,7 +218,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     background: #131313;
 }
 
-.scroll_down form {
+.scroll_down > form {
     width: 170px;
     height: 29px;
     display: flex;
@@ -201,10 +226,14 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     align-items: center;
 }
 
-.scroll_down form p {
+.scroll_down > form > p {
     text-transform: uppercase;
     font-family: 'Yeseva One';
     font-size: 0.9em;
+}
+
+.scroll_down > form > a:hover {
+    transform: scale(1.2);
 }
 
 .completed_projects {
@@ -217,21 +246,32 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .completed_projects > ul {
-    width: 680px;
+    width: 632px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     color: white;
     font-family: "Yeseva One";
-    font-size: 1.1em;
-    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2em;
     text-transform: uppercase;
-    margin: 20px 0 0 405px;
+    margin-left: 33.5%;
 }
 
-.completed_projects > ul > li:nth-of-type(1) {
-    text-decoration: underline;
+.completed_projects > ul > li > a {
+    color: #FFFFFF;
+}
+
+.completed_projects > ul > li > a:hover {
     color: #E3B873;
+    font-size: 1.1em;
+}
+
+.completed_projects > ul > li > a:active {
+    color: #E3B873;
+    font-size: 1em;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #E3B873;
 }
 
 .projects_with_photos {
@@ -257,6 +297,10 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     font-weight: normal;
 }
 
+.projects_with_photos > div:nth-of-type(1) > h2 > img {
+    padding-bottom: 3%;
+}
+
 .projects_with_photos > div:nth-of-type(1) > p {
     font-family: 'FuturaBookC';
     line-height: 1.5em;
@@ -270,8 +314,55 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     line-height: 1.8em;
 }
 
+.projects_with_photos > div > ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.projects_with_photos > div > ul > li {
+    width: 5px;
+    height: 5px;
+    list-style-image: url(assets/img/list-style.svg);
+}
+
+.projects_with_photos > div > ul > li:hover {
+    opacity: 0.5;
+}
+
+.projects_with_photos > div > ul > li:nth-of-type(1), .projects_with_photos > div > ul > li:nth-of-type(5) {
+    list-style: none;
+    padding-top: 1%;
+}
+
+.projects_with_photos > div > ul > li:nth-of-type(1):hover, .projects_with_photos > div > ul > li:nth-of-type(5):hover {
+    transform: scale(1.2);
+}
+
+.projects_with_photos > div > ul > li:nth-of-type(2) {
+    margin-left: 38%;
+}
+
 .slider {
     overflow: hidden;
+    position: relative;
+}
+
+.slider > a > img {
+    position: absolute;
+    background: #E3B873;
+    padding: 1% 1.5% 1% 1.6%;
+    border-radius: 50%;
+    z-index: 5;
+    top: 39%;
+    right: 4%;
+}
+
+.slider > a > img:hover {
+    transform: scale(1.2);
+    background: #363636;
+    z-index: 6
 }
 
 .projects_with_photos > div:nth-of-type(1) > p:nth-of-type(5) {
@@ -319,57 +410,100 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .types_of_repair > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    flex-wrap: wrap;
-    width: 770px;
-    height: 70px;
     margin: 100px auto 0;
-    font-family: "FuturaBookC";    
-}
-
-.types_of_repair > form > input {
-    font-family: "FuturaBookC";
-}
-
-.types_of_repair > form > input:nth-of-type(1) {
-    width: 250px;
-    height: 45px;
-}
-
-.types_of_repair > form > input:nth-of-type(2) {
-    width: 231px;
-    height: 45px;
-}
-
-.types_of_repair > form > input:nth-of-type(3) {
-    width: 200px;
-    height: 51px;
-    color: white;
-    background: #E3B873;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-.checkbox {
-    height: 15px;
-    width: 15px;
-    color: #E3B873;
-}
-
-.types_of_repair > form > span {
-    width: 150px;
-}
-
-.types_of_repair p:nth-of-type(2) {
+    font-family: "FuturaBookC";   
     display: flex;
-    flex-direction: row;
-    margin: 15px auto;
-    width: 280px;
+    width: 770px;
+    flex-wrap: wrap; 
     justify-content: space-around;
     align-items: center;
+}
+
+.types_of_repair > form > label {
+    display: flex;
+    flex-direction: column;
     font-family: 'FuturaBookC';
+    font-size: 1.1em;
+    line-height: 2.3em;
+    color: #363636;
+}
+
+.types_of_repair > form > label:nth-of-type(3) > input {
+    width: 200px;
+    height: 51px;
+    background: #E3B873;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+}
+
+/* Customize the label (the container) */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 5%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #E3B873;
+}
+  
+  /* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+    background-color: #E3B873;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: #E3B873;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .types_of_repair > img:nth-of-type(1) {
@@ -1159,6 +1293,7 @@ footer > ul > li:nth-of-type(8) {
 
 footer > ul > li > a:active {
     color: #E3B873;
+    text-decoration: underline;
 }
 
 footer input {

@@ -28,12 +28,6 @@
          url('assets/fonts/FuturaMediumC.woff') format("woff");
 }
 
-@font-face {
-    font-family: "FuturaDemiC";
-    src: url('assets/fonts/FuturaDemiC.woff2') format("woff2"),
-         url('assets/fonts/FuturaDemiC.woff') format("woff");
-}
-
 /* default styles reset */
 
 * {
@@ -43,6 +37,7 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    user-select: none;
 }
 
 /* default styles reset */
@@ -349,6 +344,8 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 .slider {
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: flex-start;
 }
 
 .slider > a > img {
@@ -370,11 +367,6 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 
 .projects_with_photos > div:nth-of-type(1) > p:nth-of-type(5) {
     width: 185px;
-}
-
-.projects_with_photos > div:nth-of-type(2) {
-    display: flex;
-    align-items: flex-start;
 }
 
 .completed_projects > img:nth-of-type(1) {
@@ -1352,6 +1344,15 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     margin: 40px auto 0;
 }
 
+.questions_map > p > a {
+    color: #E3B873;
+}
+
+.questions_map > p > a:hover {
+    color: rgb(255, 207, 129);
+    text-decoration: underline;
+}
+
 .nets {
     width: 92px;
     align-items: center;
@@ -1374,3 +1375,120 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 footer > .nav > ul {
     height: 133px;
 }
+
+
+/* ************** ADAPTIVE **************** */
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 768px;
+    }
+
+    .nav > ul {
+        height: 60px;
+        font-size: 0.6em;
+        padding: 0 4%;
+    }
+
+    .nav > ul > li > input {
+        width: 121px;
+        height: 27px;
+        font-size: 1.2em;
+    }
+
+    main > section:nth-of-type(1) {
+        width: 768px;
+        height: 730px;
+    }
+
+    main > section:nth-of-type(1) h2 {
+        font-size: 2em;
+    }
+
+    .scroll_down {
+        display: none;
+    }
+
+    .completed_projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1200px;
+    }
+    
+    .projects_with_photos {
+        flex-wrap: wrap;
+        height: 471px;
+    }
+
+    .projects_with_photos > div:nth-of-type(1) {
+        order: 0;
+        padding: 0 3% 0;
+        width: 725px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .completed_projects > ul {
+        display: none;
+    }
+
+    .completed_projects > div:nth-of-type(1) > div > h2 {
+        font-size: 1.3em;
+    }
+
+    .projects_with_photos > div:nth-of-type(1) > p {
+        line-height: 1.2em;
+    }
+
+    .projects_with_photos > div > ul {
+        display: none;
+    }
+
+    .projects_with_photos > div:nth-of-type(1) > p > span {     
+        font-size: 1em;
+    }
+
+    .slider {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        height: 500px;
+    }
+
+    .slider > img:nth-of-type(2) {
+        display: none;
+    }
+
+    .slider > a:nth-of-type(1) > img {
+        top: 35%;
+        right: 6%;
+    }
+
+    .slider > a:nth-of-type(2) > img {
+        top: 35%;
+        right: 88%;
+        transform: rotate(180deg);
+    }
+
+    .completed_projects > iframe:nth-of-type(1) {
+        display: none;
+    }
+
+    .completed_projects > iframe:nth-of-type(2) {
+        top: 80%;
+        left: 5.7%;
+    }
+
+    .types_of_repair > img:nth-of-type(1) {
+        margin: 7% auto 0;
+    }
+
+    .types_of_repair > form {
+        margin: 9% auto 0;
+    }
+
+    .costs {
+        margin: 31px auto 0;
+    }
+}   

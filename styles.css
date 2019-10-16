@@ -1481,7 +1481,7 @@ footer > .nav > ul {
     }
 
     .types_of_repair {
-        height: 2730px;
+        height: 2683px;;
         background: linear-gradient(to bottom, 
         rgb(19,19,19) 0%, 
         rgb(19,19,19) 22.95%,
@@ -1566,6 +1566,7 @@ footer > .nav > ul {
         height: 701px;
         width: 768px;
         position: relative;
+        background: linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgb(19,19,19) 49%, rgb(19,19,19) 100%);
     }
 
     .wildest_fantasies > img:nth-of-type(7) {
@@ -1603,7 +1604,30 @@ footer > .nav > ul {
         padding: 0;
         height: 2200px;
         flex-direction: column;
-        background: #181818;
+        background: #131313;
+        color: #FFFFFF;
+    }
+
+    .design_project > h3 {
+        margin: 0 auto;
+        font-family: 'Yeseva One';
+        font-weight: normal;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .design_project > img:nth-of-type(2) {
+        margin-top: 2%
+    }
+
+    .design_project > img:nth-of-type(1) {
+        display: none;
+    }
+
+    .design_project > p:nth-of-type(1) {
         color: #FFFFFF;
     }
 
@@ -1667,6 +1691,10 @@ footer > .nav > ul {
         height: 1052px;
     }
 
+    .questions {
+        width: 768px;
+    }
+
     .nets {
         order: 2;
     }
@@ -1676,11 +1704,27 @@ footer > .nav > ul {
         margin: 0;
     }
 
+    map {
+        background: #131313;
+    }
+
     .map > img {
         margin: 5% auto;
+        width: 768px;
     }
 
     footer {
         display: none;
+    }
+
+    main {
+        border: none;
+        background: linear-gradient(to bottom, 
+        rgb(19,19,19) 0%, 
+        rgb(19,19,19) 17.95%, 
+        rgb(255,255,255) 16.98%, 
+        rgb(255,255,255) 44.7%, 
+        rgb(19,19,19) 44.6%, 
+        rgb(19, 19, 19) 100%)
     }
 }   

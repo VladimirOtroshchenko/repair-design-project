@@ -52,19 +52,21 @@
     margin: 0 auto;
     background: linear-gradient(to bottom, 
     rgb(19,19,19) 0%, 
-    rgb(19,19,19) 18.98%, 
-    rgb(255,255,255) 18.98%, 
-    rgb(255,255,255) 45.6%, 
-    rgb(19,19,19) 45%, 
-    rgb(19,19,19) 54.37%, 
-    rgb(255,255,255) 50%, 
-    rgb(255,255,255) 61.49%, 
-    rgb(19,19,19) 59%, 
-    rgb(19,19,19) 78.4%, 
-    rgb(255,255,255) 76%,
+    rgb(19,19,19) 17.95%, 
+    rgb(255,255,255) 16.98%, 
+    rgb(255,255,255) 43.7%, 
+    rgb(19,19,19) 43.6%, 
+    rgb(19,19,19) 52.13%, 
+    rgb(255,255,255) 50%,
+    rgb(255,255,255) 57.9%, 
+    rgb(19,19,19) 57.5%, 
+    rgb(19,19,19) 75%, 
+    rgb(255,255,255) 73%, 
     rgb(255,255,255) 90%, 
-    rgb(19,19,19) 90%, 
-    rgb(19,19,19) 100%);
+    rgba(19, 19, 19, 0.95) 90%, 
+    rgba(19, 19, 19, 0.95) 98.67%,
+    rgb(19, 19, 19) 90%, 
+    rgb(19, 19, 19) 100%);
 }
 
 .content {
@@ -237,7 +239,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
 }
 
 .completed_projects {
-    height: 995px;
+    height: 955px;
     background: #131313;
     display: flex;
     flex-direction: column;
@@ -909,7 +911,6 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     color: white;
     display: flex;
     justify-content: space-between;
-    margin-top: 288px;
 }
 
 .six_steps > div:nth-of-type(1) {
@@ -932,6 +933,8 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     line-height: 1.7em;
     text-transform: uppercase;
     color: #E3B873;
+    display: flex;
+    align-items: flex-end;
 }
 
 .six_steps > div:nth-of-type(1) > p:nth-of-type(2) {
@@ -997,6 +1000,50 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     height: 380px;
     top: 100%;
     right: 0%;
+}
+
+.six_steps > div > h2 > span {
+    width: 90px;
+    height: 1px;
+    background: #E3B873;
+    display: flex;
+    margin: 0 0 5% 20%;
+}
+
+.six_steps > div > ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 249px;
+    margin-top: 17%;
+}
+
+.six_steps > div > ul > li {
+    list-style-image: url(assets/img/list-style.svg);
+    opacity: 0.7;
+}
+
+.six_steps > div > ul > li:nth-of-type(2) {
+    list-style-image: url(assets/img/list-style.svg);
+    opacity: 0.8;
+    margin-left: 11%;
+}
+
+.six_steps > div > ul > li:hover {
+    opacity: 1;
+}
+
+.six_steps > div > ul > li:active {
+    opacity: 1;
+}
+
+.six_steps > div > ul > li:nth-of-type(1), .six_steps > div > ul > li:nth-of-type(8) {
+    list-style: none;
+    padding-top: 1%;
+}
+
+.six_steps > div > ul > li:nth-of-type(1):hover, .six_steps > div > ul > li:nth-of-type(8):hover {
+    transform: scale(1.2);
 }
 
 .our_team_and_clients {
@@ -1203,6 +1250,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 1130px;
 }
 
 .questions {
@@ -1211,6 +1259,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #131313;
 }
 
 .questions > h4 {
@@ -1221,7 +1270,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 auto;
+    margin: 3% auto 0;
 }
 
 .questions > form {
@@ -1258,20 +1307,18 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     height: 45px;
 }
 
-.questions > form > label:nth-of-type(4) {
-    width: 516px;
-    height: 18px;
-    margin: 0 auto;
-    border-bottom: none;
+.questions > form > .checkbox {
+    width: 323px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    color: #FFFFFF;
+    margin: 5% auto 0;
+    line-height: 0.5em;
+    border-bottom: none;
 }
 
-.questions > form > label:nth-of-type(4) > input {
-    margin-right: 2%;
+.questions > form > .checkbox > .checkmark {
+    top: 8%;
 }
 
 .questions > form > label:nth-of-type(5) {
@@ -1283,6 +1330,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     width: 200px;
     height: 51px;
     background: #E3B873;
+    margin-top: 26%;
 }
 
 .questions > form > label > input {
@@ -1291,6 +1339,7 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     line-height: 1.4em;
     color: #FFFFFF;
     background: #131313;
+    border-bottom: #363636 solid 1px;
 }
 
 .questions_map > p {
@@ -1300,62 +1349,28 @@ main > section:nth-of-type(1) > form > input:nth-of-type(2) {
     text-align: center;
     text-transform: uppercase;
     color: #E3B873;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 .nets {
-    display: flex;
-    margin: 1.5%;
-}
-
-.nets > img {
-    padding: 14px;
-    background: #E3B873;
-    border-radius: 50%;
-    margin-right: 18%;
-}
-
-footer {
-    height: 133px;
-}
-
-footer > ul {
-    display: flex;
-    height: 133px;
+    width: 92px;
     align-items: center;
     justify-content: space-between;
-    color: white;
-    font-family: 'FuturaDemiC';
-    font-size: 1.1em;
-    font-weight: normal;
-    text-transform: uppercase;
+    display: flex;
+    margin: 2%;
 }
 
-footer > ul  a {
-    color: white;
-}
-
-footer > ul > li:nth-of-type(1) > a {
-    color: #E3B873;
-}
-
-footer > ul > li:nth-of-type(8) {
-    color: #E3B873;
-    text-decoration-line: underline;
-}
-
-footer > ul > li > a:active {
-    color: #E3B873;
-    text-decoration: underline;
-}
-
-footer input {
-    width: 161px;
-    height: 37px;
-    font-family: 'FuturaDemiC';
-    font-size: 14px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+.nets > a > img {
+    padding: 11px;
     background: #E3B873;
-    border-radius: 3px;
+    border-radius: 50%;
+}
+
+.nets > a > img:hover {
+    background: #363636;
+    border: 1px solid #FFFFFF;
+}
+
+footer > .nav > ul {
+    height: 133px;
 }

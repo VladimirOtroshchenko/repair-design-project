@@ -403,10 +403,10 @@ header {
     align-items: flex-start;
 }
 
-.projects_with_photos__slider__link > img {
+.projects_with_photos__slider__right {
     position: absolute;
     background: #E3B873;
-    padding: 2% 2.5% 2% 2.6%;
+    padding: 2.5% 2.8% 2% 3%;
     border-radius: 50%;
     z-index: 5;
     top: 37%;
@@ -414,14 +414,18 @@ header {
     box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
 }
 
-.projects_with_photos__slider__image:nth-of-type(3) {
+.projects_with_photos__slider__left {
     display: none;
 }
 
-.projects_with_photos__slider__link > img:hover {
-    transform: scale(1.2);
+.projects_with_photos__slider__pic_mobile {
+    display: none;
+}
+
+.projects_with_photos__slider__right:hover {
     background: #363636;
-    z-index: 6
+    z-index: 6;
+    border: 1px solid #FFFFFF;
 }
 
 .completed_projects > img:nth-of-type(1) {
@@ -437,16 +441,16 @@ header {
     left: 18%;
 }
 
-.completed_projects > iframe:nth-of-type(2) {
+.projects_with_photos__iframe__tablet {
     display: none;
 }
 
-.completed_projects > iframe:nth-of-type(3) {
+.projects_with_photos__iframe__mobile {
     display: none;
 }
 
 .types_of_repair {
-    height: 1675px;
+    height: 1540px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -464,7 +468,7 @@ header {
     font-size: 1.3em;
 }
 
-.types_of_repair__online_control_descr > span {
+.types_of_repair__online_control_descr__br {
     display: none;
 }
 
@@ -497,6 +501,11 @@ header {
     border-radius: 2px;
 }
 
+.types_of_repair__data_form__submit > input:hover {
+    background: #363636;
+    border: 1px solid #E3B873;
+}
+
 /* Customize the label (the container) */
 .checkbox {
     display: block;
@@ -523,7 +532,7 @@ header {
   /* Create a custom checkbox */
 .checkmark {
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 4px;
     height: 20px;
     width: 20px;
@@ -565,7 +574,7 @@ header {
     transform: rotate(45deg);
 }
 
-.types_of_repair > img:nth-of-type(2) {
+.types_of_repair__image_caption {
     margin-top: 150px;
 }
 
@@ -642,7 +651,10 @@ header {
     right: 47%;
 }
 
-.building__bg__list__item {
+.building__bg__list__first, 
+.building__bg__list__second, 
+.building__bg__list__third, 
+.building__bg__list__fourth {
     font-family: 'FuturaMediumC';
     font-size: 1.1em;
     line-height: 1.3em;
@@ -653,31 +665,31 @@ header {
     justify-content: space-between;
 }
 
-.building__bg__list__item:nth-of-type(1) {
+.building__bg__list__first {
     top: 17%;
     left: 48%;
     width: 423px;
 }
 
-.building__bg__list__item:nth-of-type(2) {
+.building__bg__list__second {
     top: 37%;
     left: 59%;
     width: 167px;
 }
 
-.building__bg__list__item:nth-of-type(3) {
+.building__bg__list__third {
     top: 60%;
     left: 61%;
     width: 191px;
 }
 
-.building__bg__list__item:nth-of-type(4) {
+.building__bg__list__fourth {
     top: 83%;
     left: 54%;
     width: 289px;
 }
 
-.building__bg__list__item > span { 
+.building__bg__list__item__span { 
     width: 50px;
     height: 50px;
     font-family: 'Yeseva One';
@@ -736,7 +748,11 @@ header {
     height: 370px;
 }
 
-.building__request__datas > label {
+.building__request__datas__name, 
+.building__request__datas__phone, 
+.building__request__datas__mail,
+.checkbox,
+.building__request__datas__submit {
     font-family: 'FuturaBookC';
     font-size: 1em;
     line-height: 16px;
@@ -746,7 +762,9 @@ header {
     flex-direction: column;
 }
 
-.building__request__datas > label > input {
+.building__request__datas__name__input, 
+.building__request__datas__phone__input, 
+.building__request__datas__mail__input {
     color: #FFFFFF;
     border-bottom: 1px solid #959595;
     width: 408px;
@@ -754,18 +772,31 @@ header {
     background: #131313;
 }
 
+.building__request__datas > .checkbox {
+    color: #FFFFFF;
+    line-height: 1.3em; 
+}
+
 .building__request__datas > label > .checkmark {
     top: 0%;
 }
 
-.building__request__datas > label:nth-of-type(5) > input {
-    width: 213px;;
+.building__request__datas__submit__input {
+    width: 213px;
     height: 50px;
     background: #E3B873;
-    margin-left: 50%;
+    margin-left: 48%;
     border-bottom: none;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
     text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.building__request__datas__submit__input:hover {
+    background: #E3B873;
+    color: #181818;
+    border-radius: 10%;
+    border: 1px solid #959595;
 }
 
 .building__request__pig {
@@ -775,7 +806,7 @@ header {
     display: flex;
 }
 
-.building__request__pig > img {
+.building__request__pig__image {
     padding: 15px;
     border-radius: 50%;
     background: #E3B873;
@@ -827,37 +858,37 @@ header {
     position: absolute;
 }
 
-.wildest_fantasies > img:nth-of-type(1) {
+.wildest_fantasies__bg_pic {
     top: 0%;
     right: 5.8%;
 }
 
-.wildest_fantasies > img:nth-of-type(2) {
+.wildest_fantasies__bg_pic_dark {
     top: 0%;
     right: 5.8%;
 }
 
-.wildest_fantasies > img:nth-of-type(3) {
+.wildest_fantasies__clock {
     bottom: 40%;
     right: 41%;
 }
 
-.wildest_fantasies > img:nth-of-type(4) {
+.wildest_fantasies__tvr {
     top: 65%;
     right: 41%;
 }
 
-.wildest_fantasies > img:nth-of-type(5) {
+.wildest_fantasies__room {
     bottom: 82%;
     right: 14%;
 }
 
-.wildest_fantasies > img:nth-of-type(6) {
+.wildest_fantasies__clock__sofa {
     top: 23%;
     right: 14%;
 }
 
-.wildest_fantasies > img:nth-of-type(7) {
+.wildest_fantasies__clock_full {
     display: none
 }
 
@@ -868,15 +899,15 @@ header {
     padding-top: 120px;
 }
 
-.design_project > h3:nth-of-type(1) {
+.design_project__caption {
     display: none;
 }
 
-.design_project > img:nth-of-type(2) {
+.design_project__image__mobile {
     display: none;
 }
 
-.design_project > p:nth-of-type(1) {
+.design_project__caption__descr {
     margin: 30px auto 0;
     font-family: 'FuturaBookC';
     font-size: 1.2em;
@@ -885,13 +916,13 @@ header {
     color: #363636;
 }
 
-.projects {
+.design_project__projects {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.projects > figure {
+.design_project__projects__figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -900,7 +931,9 @@ header {
     position: relative;
 }
 
-.projects > figure > figcaption {
+.design_project__projects__figure__figcaption_first, 
+.design_project__projects__figure__figcaption_second,
+.design_project__projects__figure__figcaption_third {
     background: #FFFFFF;
     width: 330px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -909,19 +942,19 @@ header {
     left: 8%;
 }
 
-.projects > figure:nth-of-type(1) > figcaption {
+.design_project__projects__figure__figcaption_first {
     height: 210px;
 }
 
-.projects > figure:nth-of-type(2) > figcaption {
+.design_project__projects__figure__figcaption_second {
     height: 286px;
 }
 
-.projects > figure:nth-of-type(3) > figcaption {
+.design_project__projects__figure__figcaption_third {
     height: 414px;
 }
 
-.projects p {
+.design_project__projects__figure__figcaption__caption {
     font-family: 'Yeseva One';
     font-size: 1.2em;
     line-height: 1.3em;
@@ -929,11 +962,11 @@ header {
     padding: 25px 0 0 34px;
 }
 
-.projects ul {
+.design_project__projects__list {
     padding: 2% 0 0 16%;
 }
 
-.projects ul > li {
+.design_project__projects__list__item {
     font-family: 'FuturaBookC';
     font-size: 1em;
     line-height: 1.5em;
@@ -941,7 +974,7 @@ header {
     list-style: disc;
 }
 
-.full_list {
+.design_project__projects__figure__figcaption__span_reduction {
     font-family: 'FuturaBookC';
     font-size: 1em;
     line-height: 1.5em;
@@ -949,7 +982,7 @@ header {
     list-style: disc;
 }
 
-.projects span:not(.full_list) {
+.design_project__projects__figure__figcaption__span_price {
     width: 228px;
     height: 54px;
     background: #E3B873;
@@ -965,15 +998,15 @@ header {
     margin: 5% 20% 0 0;
 }
 
-.projects > figure:nth-of-type(1) > figcaption > span {
+.design_project__projects__figure__figcaption_first > .design_project__projects__figure__figcaption__span_price {
     margin-top: 9%;
 }
 
-.projects > figure:nth-of-type(2) > figcaption > span {
+.design_project__projects__figure__figcaption_second > .design_project__projects__figure__figcaption__span_price {
     margin-top: 11%;
 }
 
-.projects > figure:nth-of-type(3) > figcaption > span {
+.design_project__projects__figure__figcaption_third > .design_project__projects__figure__figcaption__span_price {
     margin-top: 13%;
 }
 
@@ -984,12 +1017,12 @@ header {
     justify-content: space-between;
 }
 
-.six_steps > div:nth-of-type(1) {
+.six_steps__text_block {
     width: 337px;
     height: 515px;
 }
 
-.six_steps > div:nth-of-type(1) > p:nth-of-type(1) {
+.six_steps__text_block__working {
     font-family: 'FuturaDemiC';
     font-size: 1em;
     line-height: 2em;
@@ -997,7 +1030,7 @@ header {
     color: #FFFFFF;
 }
 
-.six_steps > div:nth-of-type(1) > h2 {
+.six_steps__text_block__caption{
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 1.6em;
@@ -1008,7 +1041,7 @@ header {
     align-items: flex-end;
 }
 
-.six_steps > div:nth-of-type(1) > p:nth-of-type(2) {
+.six_steps__text_block__fraction {
     font-family: 'Yeseva One';
     font-size: 1.2em;
     line-height: 1.5em;
@@ -1017,7 +1050,7 @@ header {
     margin-top: 20%;
 }
 
-.six_steps > div:nth-of-type(1) > h4 {
+.six_steps__text_block__sec_caption {
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 1.3em;
@@ -1027,7 +1060,7 @@ header {
     margin-top: 4%;
 }
 
-.six_steps > div:nth-of-type(1) > p:nth-of-type(3) {
+.six_steps__text_block__text {
     font-family: 'FuturaBookC';
     font-size: 1.3em;
     line-height: 1.6em;
@@ -1035,7 +1068,7 @@ header {
     margin-top: 5%;
 }
 
-.six_steps > div:nth-of-type(2) {
+.six_steps__steps {
     width: 765px;
     height: 300px;
     display: flex;
@@ -1045,7 +1078,7 @@ header {
     margin-top: 4%;
 }
 
-.six_steps > div:nth-of-type(2) > h4 {
+.six_steps__steps__caption {
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 1.3em;
@@ -1057,7 +1090,7 @@ header {
     width: 27px;
 }
 
-.six_steps > div:nth-of-type(2) > p {
+.six_steps__steps__item {
     font-family: 'FuturaBookC';
     font-size: 1.2em;
     line-height: 1.6em;
@@ -1065,7 +1098,7 @@ header {
     width: 322px;
 }
 
-.six_steps > div:nth-of-type(2) > img {
+.six_steps__steps__image_man {
     position: absolute;
     width: 765px;
     height: 380px;
@@ -1073,7 +1106,7 @@ header {
     right: 0%;
 }
 
-.six_steps > div > h2 > span {
+.six_steps__text_block__span_line {
     width: 90px;
     height: 1px;
     background: #E3B873;
@@ -1081,7 +1114,7 @@ header {
     margin: 0 0 5% 20%;
 }
 
-.six_steps > div > ul {
+.six_steps__text_block__list_navi {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -1089,7 +1122,7 @@ header {
     margin-top: 17%;
 }
 
-.six_steps > div > ul > li {
+.six_steps__text_block__list_navi__item {
     list-style-image: url(assets/img/list-style.svg);
     opacity: 0.7;
 }
@@ -1100,20 +1133,22 @@ header {
     margin-left: 11%;
 }
 
-.six_steps > div > ul > li:hover {
+.six_steps__text_block__list_navi__item:hover {
     opacity: 1;
 }
 
-.six_steps > div > ul > li:active {
+.six_steps__text_block__list_navi__item:active {
     opacity: 1;
 }
 
-.six_steps > div > ul > li:nth-of-type(1), .six_steps > div > ul > li:nth-of-type(8) {
+.six_steps__text_block__list_navi__left, 
+.six_steps__text_block__list_navi__right {
     list-style: none;
     padding-top: 1%;
 }
 
-.six_steps > div > ul > li:nth-of-type(1):hover, .six_steps > div > ul > li:nth-of-type(8):hover {
+.six_steps__text_block__list_navi__left:hover, 
+.six_steps__text_block__list_navi__right:hover  {
     transform: scale(1.2);
 }
 
@@ -1123,7 +1158,7 @@ header {
     flex-direction: column;
 }
 
-.our_team_and_clients > h2 {
+.our_team_and_clients__caption {
     margin: 0 auto;
     font-family: 'Yeseva One';
     font-weight: normal;
@@ -1134,11 +1169,11 @@ header {
     color: #FFFFFF;
 }
 
-.our_team_and_clients > img {
+.our_team_and_clients__caption_image {
     margin: 2%;
 }
 
-.our_team_and_clients > p {
+.our_team_and_clients__descr {
     margin: 0 auto;
     font-family: 'FuturaBookC';
     font-size: 1.1em;
@@ -1147,13 +1182,13 @@ header {
     color: #FFFFFF;
 }
 
-.our_team {
+.our_team_and_clients__our_team {
     display: flex;
     flex-wrap: wrap;
     margin-top: 8%;
 }
 
-.our_team > figure {
+.our_team_and_clients__our_team__figure{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1162,7 +1197,7 @@ header {
     position: relative;
 }
 
-.our_team > figure > img:nth-of-type(2) {
+.our_team_and_clients__our_team__figure__human__skill {
     padding: 4%;
     background: #E3B873;
     position: absolute;
@@ -1172,7 +1207,7 @@ header {
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
-.our_team > figure > figcaption {
+.our_team_and_clients__our_team__figure_figcaption {
     text-align: center;
     width: 233px;
     height: 137px;
@@ -1186,7 +1221,7 @@ header {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 }
 
-.our_team > figure > figcaption > h3 {
+.our_team_and_clients__our_team__figure_figcaption__name {
     font-family: 'Yeseva One';
     font-size: 1em;
     line-height: 1.3em;
@@ -1194,14 +1229,14 @@ header {
     padding-top: 8%;
 }
 
-.our_team > figure > figcaption > p:nth-of-type(1) {
+.our_team_and_clients__our_team__figure_figcaption__work {
     font-family: 'FuturaBookC';
     font-size: 1.1em;
     line-height: 3em;
     color: #959595;
 }
 
-.our_team > figure > figcaption > p:nth-of-type(2) {
+.our_team_and_clients__our_team__figure_figcaption__exp {
     font-family: 'Yeseva One';
     font-size: 0.9em;
     line-height: 3em;
@@ -1210,7 +1245,7 @@ header {
     background: #E3B873;
 }
 
-.our_team > p {
+.our_team_and_clients__our_team__about {
     margin: 12% auto 0;
     font-family: 'FuturaBookC';
     font-size: 1.1em;
@@ -1219,12 +1254,12 @@ header {
     color: #363636;
 }
 
-.our_clients {
+.our_team_and_clients__our_clients {
     height: 500px;
     margin-top: 10%;
 }
 
-.our_clients > h3 {
+.our_team_and_clients__our_clients__caption{
     margin: 0 auto;
     font-family: 'Yeseva One';
     font-weight: normal;
@@ -1235,12 +1270,12 @@ header {
     color: #181818;
 }
 
-.our_clients > img {
+.our_team_and_clients__our_clients__image_caption {
     margin: 1.2% auto;
     display: block;
 }
 
-.our_clients > p {
+.our_team_and_clients__our_clients__recommends {
     margin: 0 auto;
     font-family: 'FuturaBookC';
     font-size: 1.2em;
@@ -1249,13 +1284,13 @@ header {
     color: #363636;
 }
 
-.clients {
+.our_team_and_clients__our_clients__clients {
     display: flex;
     justify-content: space-between;
     margin-top: 4%;
 }
 
-.clients > div {
+.our_team_and_clients__our_clients__clients__client {
     display: flex;
     flex-wrap: wrap;
     width: 376px;
@@ -1264,7 +1299,7 @@ header {
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
-.clients > div > h4 {
+.our_team_and_clients__our_clients__clients__client__name {
     width: 190px;
     height: 76px;
     font-family: 'Yeseva One';
@@ -1277,7 +1312,7 @@ header {
     padding: 7% 0 0 3%;
 }
 
-.clients > div > p:nth-of-type(1) {
+.our_team_and_clients__our_clients__clients__client__comment {
     font-family: 'FuturaBookC';
     font-size: 1em;
     line-height: 1.5em;
@@ -1286,14 +1321,14 @@ header {
     padding: 5% 0 0 6%;
 }
 
-.clients > div > img {
+.our_team_and_clients__our_clients__clients__client__photo {
     border-radius: 50%;
     width: 76px;
     height: 76px;
     margin: 4% 0 0 6%;
 }
 
-.clients > div > p:nth-of-type(2) {
+.our_team_and_clients__our_clients__clients__client__metres {
     font-family: 'Yeseva One';
     font-size: 1.2em;
     line-height: 1.2em;
@@ -1310,7 +1345,7 @@ header {
     margin-top: 13%;
 }
 
-.clients > div > p > span {
+.our_team_and_clients__our_clients__clients__client__border {
     height: 54px;
     border-left: 1px solid #FFFFFF;
     width: 2px;
@@ -1324,7 +1359,7 @@ header {
     height: 1130px;
 }
 
-.questions {
+.questions_map__questions {
     width: 883px;
     height: 445px;
     display: flex;
@@ -1333,7 +1368,7 @@ header {
     background: #131313;
 }
 
-.questions > h4 {
+.questions_map__questions__caption {
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 1.1em;
@@ -1344,7 +1379,7 @@ header {
     margin: 3% auto 0;
 }
 
-.questions > form {
+.questions_map__questions__data {
     width: 520px;
     height: 376px;
     display: flex;
@@ -1352,68 +1387,71 @@ header {
     justify-content: space-between;
 }
 
-.questions > form > label {
+.questions_map__questions__data__name, 
+.questions_map__questions__data__phone, 
+.questions_map__questions__data > .checkbox,
+.questions_map__questions__data__submit {
     font-family: 'FuturaBookC';
     font-size: 1em;
-    line-height: 1.2em;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions_map__questions__data__name__input, 
+.questions_map__questions__data__phone__input {
+    color: #FFFFFF;
+    border-bottom: 1px solid #959595;
+    width: 200px;
+    height: 40px;
+    background: #131313;
+}
+
+.questions_map__questions__data__question {
+    font-family: 'FuturaBookC';
+    font-size: 1em;
+    line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
-    border-bottom: #363636 solid 1px;
     margin-top: 10%;
 }
 
-.questions > form > label:nth-of-type(1) {
-    width: 231px;
-    height: 45px;
-}
-
-.questions > form > label:nth-of-type(2) {
-    width: 231px;
-    height: 45px;
-}
-
-.questions > form > label:nth-of-type(3) {
-    width: 516px;
-    height: 45px;
-}
-
-.questions > form > .checkbox {
-    width: 323px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 5% auto 0;
-    line-height: 0.5em;
-    border-bottom: none;
-}
-
-.questions > form > .checkbox > .checkmark {
-    top: 8%;
-}
-
-.questions > form > label:nth-of-type(5) {
-    border-bottom: none;
-    margin: 0 auto;
-}
-
-.questions > form > label:nth-of-type(5) > input {
-    width: 200px;
-    height: 51px;
-    background: #E3B873;
-    margin-top: 26%;
-}
-
-.questions > form > label > input {
-    font-family: 'FuturaBookC';
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: #FFFFFF;
+.questions_map__questions__data__question__input {
+    width: 520px;
+    height: 40px;
+    border-bottom: 1px solid #959595;
     background: #131313;
-    border-bottom: #363636 solid 1px;
+    color: #FFFFFF;
 }
 
-.questions_map > p {
+.questions_map__questions__data > .checkbox {
+    color: #FFFFFF;
+    width: 310px;
+    margin: 0 auto;
+    width: 310px;
+    margin: 5% auto 0;
+    line-height: 1.4em;
+}
+
+.questions_map__questions__data > .checkbox > .checkmark {
+    top: 0%;
+}
+
+.questions_map__questions__data__submit__input {
+    width: 213px;
+    height: 50px;
+    background: #E3B873;
+    margin-left: 72%;
+    border-bottom: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.questions_map__questions__contacts {
     font-family: 'Yeseva One';
     font-size: 1.2em;
     line-height: 1.2em;
@@ -1423,16 +1461,16 @@ header {
     margin: 40px auto 0;
 }
 
-.questions_map > p > a {
+.questions_map__questions__contacts__tel {
     color: #E3B873;
 }
 
-.questions_map > p > a:hover {
+.questions_map__questions__contacts__tel:hover {
     color: rgb(255, 207, 129);
     text-decoration: underline;
 }
 
-.nets {
+.questions_map__questions__links {
     width: 92px;
     align-items: center;
     justify-content: space-between;
@@ -1440,18 +1478,18 @@ header {
     margin: 2%;
 }
 
-.nets > a > img {
+.questions_map__questions__links  img {
     padding: 11px;
     background: #E3B873;
     border-radius: 50%;
 }
 
-.nets > a > img:hover {
+.questions_map__questions__links img:hover {
     background: #363636;
     border: 1px solid #FFFFFF;
 }
 
-footer > .nav__list {
+footer > .nav {
     height: 133px;
 }
 
@@ -1733,23 +1771,23 @@ footer > .nav__list {
         margin: 0 auto;
     }
 
-    .projects > figure {
+    .design_project__projects__figure {
         margin-top: 5%;
     }
 
-    .projects > figure:nth-of-type(2) {
+    .design_project__projects__figure:nth-of-type(2) {
         margin-top: 28%;
     }
 
-    .projects > figure:nth-of-type(3) {
+    .design_project__projects__figure:nth-of-type(3) {
         margin-top: 48%;
     }
 
-    .projects > figure:nth-of-type(3) > figcaption > ul > span {
+    .design_project__projects__figure:nth-of-type(3) > figcaption > ul > span {
         display: none;
     }
 
-    .projects > figure:nth-of-type(3) > figcaption {
+    .design_project__projects__figure:nth-of-type(3) > figcaption {
         height: 297px;
     }
 
@@ -2129,7 +2167,7 @@ footer > .nav__list {
         height: 1550px;
     }
 
-    .projects > figure {
+    .design_project__projects__figure {
         width: 340px;
     }
 
@@ -2142,21 +2180,21 @@ footer > .nav__list {
         line-height: 0.8em;
     }
 
-    .projects > figure:nth-of-type(1) > figcaption {
+    .design_project__projects__figure:nth-of-type(1) > figcaption {
         height: 177px;
         width: 270px;
         top: 57%;
         left: 0;
     }
 
-    .projects > figure:nth-of-type(2) > figcaption {
+    .design_project__projects__figure:nth-of-type(2) > figcaption {
         height: 241px;
         width: 270px;
         top: 62%;
         left: 0;
     }
 
-    .projects > figure:nth-of-type(3) > figcaption {
+    .design_project__projects__figure:nth-of-type(3) > figcaption {
         height: 241px;
         width: 270px;
         top: 62%;
@@ -2170,15 +2208,15 @@ footer > .nav__list {
         padding-left: 14%;
     }
 
-    .projects > figure:nth-of-type(1) > figcaption > span {
+    .design_project__projects__figure:nth-of-type(1) > figcaption > span {
         margin-top: 14px;
     }
 
-    .projects > figure:nth-of-type(2) > figcaption > span {
+    .design_project__projects__figure:nth-of-type(2) > figcaption > span {
         margin-top: 6px;
     }
 
-    .projects > figure:nth-of-type(3) > figcaption > span {
+    .design_project__projects__figure:nth-of-type(3) > figcaption > span {
         margin-top: 7px;
     }
 

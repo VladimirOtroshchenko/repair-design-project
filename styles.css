@@ -1501,16 +1501,21 @@ footer > .nav {
         width: 768px;
     }
 
-    .nav__list {
-        height: 60px;
-        font-size: 0.6em;
-        padding: 0 4%;
+    .nav {
+        font-size: 0.75em;
+        height: 65px;
+        padding: 0 3%;
     }
 
-    .nav__list > li > input {
-        width: 121px;
-        height: 27px;
-        font-size: 1.2em;
+    .nav__list {
+        font-size: 0.8em;
+        width: 310px;
+    }
+
+    .nav__button {
+        width: 100px;
+        height: 30px;
+        font-size: 0.8em;
     }
 
     .home {
@@ -1522,7 +1527,7 @@ footer > .nav {
         font-size: 2em;
     }
 
-    .scroll_down {
+    .home__scroll_down {
         display: none;
     }
 
@@ -1537,7 +1542,7 @@ footer > .nav {
         height: 471px;
     }
 
-    .projects_with_photos > div:nth-of-type(1) {
+    .projects_with_photos__text_block {
         order: 0;
         padding: 0 3% 0;
         width: 725px;
@@ -1549,29 +1554,25 @@ footer > .nav {
         display: none;
     }
 
-    .completed_projects > div:nth-of-type(1) > div > h2 {
+    .projects_with_photos__text_block__completed__projects {
         font-size: 1.3em;
     }
 
-    .data {
+    .projects_with_photos__text_block__completed__data {
         width: 730px;
         margin: 0;
     }
 
-    .projects_with_photos__text_block__completed_text, .data__text {
+    .projects_with_photos__text_block__completed__data__text, .projects_with_photos__text_block__completed__data__text_yellow {
         margin-top: 7%;
     }
 
-    .projects_with_photos > div:nth-of-type(1) > p {
+    .projects_with_photos__text_block__completed_text {
         line-height: 1.2em;
     }
 
     .projects_with_photos__navi__list {
         display: none;
-    }
-
-    .projects_with_photos > div:nth-of-type(1) > p > span {     
-        font-size: 1em;
     }
 
     .projects_with_photos__slider {
@@ -1582,26 +1583,42 @@ footer > .nav {
         height: 500px;
     }
 
-    .projects_with_photos__slider__image:nth-of-type(2) {
+    .projects_with_photos__slider__pic_two {
         display: none;
     }
 
-    .projects_with_photos__slider__link:nth-of-type(1) > img {
+    .projects_with_photos__slider__right {
         top: 42%;
-        right: 6%;
+        right: 8%;
+        display: block;
     }
 
-    .projects_with_photos__slider__link:nth-of-type(2) > img {
+    .projects_with_photos__slider__left {
         top: 42%;
-        right: 88%;
+        right: 85%;
         transform: rotate(180deg);
+        display: block;
+        position: absolute;
+        background: #E3B873;
+        padding: 2.5% 2.8% 2% 3%;
+        border-radius: 50%;
+        z-index: 5;
+        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+    }
+
+    .projects_with_photos__slider__pic_one {
+        margin: 0;
     }
 
     .completed_projects > img:nth-of-type(1) {
-        margin: 220px auto 0;
+        margin: 198px auto 0;
     }
 
-    .completed_projects > iframe:nth-of-type(1) {
+    .projects_with_photos__iframe__desktop {
+        display: none;
+    }
+
+    .projects_with_photos__iframe__mobile {
         display: none;
     }
 
@@ -1615,17 +1632,17 @@ footer > .nav {
         height: 2683px;;
         background: linear-gradient(to bottom, 
         rgb(19,19,19) 0%, 
-        rgb(19,19,19) 22.95%,
+        rgb(19,19,19) 25.5%,
         rgb(255,255,255) 16.98%, 
         rgb(255,255,255) 43.7%);
     }
 
-    .types_of_repair > img:nth-of-type(2) {
+    .types_of_repair__image_caption {
         margin-top: 70px;
     }
 
-    .types_of_repair > img:nth-of-type(1) {
-        margin: 12% auto 0;
+    .types_of_repair__line {
+        margin: 35% auto 0;
     }
 
     .types_of_repair__online_control_descr {
@@ -1642,7 +1659,8 @@ footer > .nav {
         color: #FFFFFF;
     }
 
-    .types_of_repair__data_form > label > input {
+    .types_of_repair__data_form__input__name,
+    .types_of_repair__data_form__input__phone {
         color: #FFFFFF;
         background: #131313;
         border-bottom: 1px solid #959595;
@@ -1650,9 +1668,10 @@ footer > .nav {
 
     .types_of_repair__data_form__submit {
         border-bottom: none;
+        background: #E3B873;
     }
 
-    .checkmark {
+    .types_of_repair__data_form .checkmark {
         top: 10px;
     }
 
@@ -1679,18 +1698,18 @@ footer > .nav {
         display: none;
     }
 
-    .wildest_fantasies > p {
+    .wildest_fantasies__caption {
         font-size: 1.3em;
         margin: 5% auto;
         text-align: center;
         position: static;
     }
 
-    .wildest_fantasies > p > br {
+    .wildest_fantasies__caption__br {
         display: none
     }
 
-    .wildest_fantasies > img {
+    .wildest_fantasies > img:not(.wildest_fantasies__clock_full) {
         display: none;
     }
 
@@ -1701,7 +1720,7 @@ footer > .nav {
         background: linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgb(19,19,19) 49%, rgb(19,19,19) 100%);
     }
 
-    .wildest_fantasies > img:nth-of-type(7) {
+    .wildest_fantasies__clock_full {
         left: 4.5%;
         display: flex;
         height: 600px;
@@ -1709,7 +1728,7 @@ footer > .nav {
         bottom: 7%;
     }
 
-    .wildest_fantasies > a:nth-of-type(1) > img {
+    .wildest_fantasies__left_stroke {
         position: absolute;
         background: #E3B873;
         padding: 2% 2.5% 2% 2.6%;
@@ -1721,7 +1740,7 @@ footer > .nav {
         transform: rotate(180deg);
     }
 
-    .wildest_fantasies > a:nth-of-type(2) > img {
+    .wildest_fantasies__right_stroke {
         position: absolute;
         background: #E3B873;
         padding: 2% 2.5% 2% 2.6%;
@@ -1740,12 +1759,12 @@ footer > .nav {
         color: #FFFFFF;
     }
 
-    .design_project > img:nth-of-type(2) {
+    .design_project__image__mobile {
         display: block;
         margin: 2%;
     }
 
-    .design_project > h3:nth-of-type(1) {
+    .design_project__caption {
         margin: 0 auto;
         font-family: 'Yeseva One';
         font-weight: normal;
@@ -1757,33 +1776,30 @@ footer > .nav {
         display: inline;
     }
 
-    .design_project > img:nth-of-type(1) {
+    .design_project__image {
         display: none;
     }
 
-    .design_project > p:nth-of-type(1) {
+    .design_project__caption__descr {
         color: #FFFFFF;
         margin: 0;
     }
 
-    .projects {
+    .design_project__projects {
+        display: flex;
+        align-items: center;
         flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .design_project__projects__figure {
-        margin-top: 5%;
     }
 
     .design_project__projects__figure:nth-of-type(2) {
-        margin-top: 28%;
+        margin-top: 15%;
     }
 
     .design_project__projects__figure:nth-of-type(3) {
-        margin-top: 48%;
+        margin-top: 26%;
     }
 
-    .design_project__projects__figure:nth-of-type(3) > figcaption > ul > span {
+    .design_project__projects__figure__figcaption__span_reduction {
         display: none;
     }
 
@@ -1801,25 +1817,27 @@ footer > .nav {
         flex-direction: column;
     }
 
-    .our_team {
+    .our_team_and_clients__our_team {
         flex-direction: column;
         justify-content: space-around;
         height: 1800px;
         margin: 0;
     }
 
-    .our_team > p {
+    .our_team_and_clients__our_team__figure {
+        margin: 11% auto;
+    }
+
+    .our_team_and_clients__our_team__figure_figcaption__exp {
         margin: 0;
         color: #FFFFFF;
     }
 
-    .our_clients {
-        height: 1800px;
-        flex-direction: column;
-        display: flex;
+    .our_team_and_clients__our_team__about {
+        color: #FFFFFF;
     }
 
-    .our_clients {
+    .our_team_and_clients__our_clients {
         display: none;
     }
 
@@ -1827,24 +1845,24 @@ footer > .nav {
         height: 1052px;
     }
 
-    .questions {
+    .questions_map__questions {
         width: 768px;
     }
 
-    .nets {
+    .questions_map__questions__links {
         order: 2;
     }
 
-    .questions_map > p {
+    .questions_map__questions__contacts {
         order: 1;
         margin: 0;
     }
 
-    map {
+    .questions_map__questions__map {
         background: #131313;
     }
 
-    .map > img {
+    .questions_map__questions__map > img {
         margin: 5% auto;
         width: 768px;
     }

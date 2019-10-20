@@ -73,8 +73,15 @@ header {
     background: #131313;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav__list {
     height: 83px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +98,6 @@ header {
 
 .nav__list__item__link:hover {
     transform: scale(1.2);
-    font-size: 1.1em;
     color: #E3B873;
 }
 
@@ -100,20 +106,38 @@ header {
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
     padding-bottom: 1%;
+    text-decoration: underline;
 }
 
-.nav__list__item__link:nth-of-type(1) > h1 {
-    color: #E3B873;
+.nav__h1 {
+    font-family: 'FuturaDemiC';
     font-weight: normal;
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
-.nav__list__item__tel {
+.nav__h1__link {
+    color: #E3B873;
+}
+
+.nav__h1__link:hover {
+    transform: scale(1.2);
+}
+
+.nav__tel {
+    font-family: 'FuturaDemiC';
     color: #E3B873;
     text-decoration-line: underline;
 }
 
-.nav__list__button {
+.nav__tel:hover {
+    transform: scale(1.2);
+}
+
+.nav__button {
     width: 161px;
     height: 37px;
     font-family: 'FuturaDemiC';
@@ -123,6 +147,11 @@ header {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
+}
+
+.nav__button:hover {
+    background: #363636;
+    border: 1px solid #E3B873;
 }
 
 .insta {
@@ -148,7 +177,7 @@ header {
     position: relative;
 }
 
-.home > img:nth-of-type(1) {
+.home__image_dark_mobile {
     display: none;
 }
 
@@ -177,9 +206,6 @@ header {
     height: 51px;
     display: flex;
     justify-content: space-between;
-}
-
-.home__buttons > input {
     font-size: 0.85em;
 }
 
@@ -193,14 +219,24 @@ header {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
 }
 
+.home__buttons__calc:hover {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
+
 .home__buttons__submit {
     width: 207px;
     height: 51px;
     margin-top: 30px;
-    background: rgba(0, 0, 0, 0%);
+    background: transparent;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
+}
+
+.home__buttons__submit:hover {
+    background: #E3B873;
+    border: none;
 }
 
 .home__buttons__application {
@@ -227,13 +263,13 @@ header {
     align-items: center;
 }
 
-.home__scroll_down__button > p {
+.home__scroll_down__button_scroll {
     text-transform: uppercase;
     font-family: 'Yeseva One';
     font-size: 0.9em;
 }
 
-.home__scroll_down__button > a:hover {
+.home__scroll_down__button__link:hover {
     transform: scale(1.2);
 }
 
@@ -259,16 +295,16 @@ header {
     margin-left: 35%;
 }
 
-.completed_projects__list__link {
+.completed_projects__list__item__link {
     color: #FFFFFF;
 }
 
-.completed_projects__list__link:hover {
+.completed_projects__list__item__link:hover {
     color: #E3B873;
     font-size: 1.1em;
 }
 
-.completed_projects__list__link:active {
+.completed_projects__list__item__link:active {
     color: #E3B873;
     font-size: 1em;
     padding-bottom: 1%;
@@ -298,13 +334,13 @@ header {
     padding-bottom: 3%;
 }
 
-.projects_with_photos__text_block__completed_text, .data__text {
+.projects_with_photos__text_block__completed_text, .projects_with_photos__text_block__completed__data__text {
     font-family: 'FuturaBookC';
     line-height: 1.5em;
     margin-top: 10%;
 }
 
-.data {
+.projects_with_photos__text_block__completed__data {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -315,7 +351,7 @@ header {
     margin-top: 4%;
 }
 
-.data__text_yellow {
+.projects_with_photos__text_block__completed__data__text_yellow {
     font-family: 'Yeseva One';
     color: #E3B873;
     text-transform: uppercase;
@@ -329,35 +365,35 @@ header {
 
 .projects_with_photos__navi__list {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
-    width: 180px;
+    width: 200px;
     position: absolute;
     top: 56%;
     left: 0%;
 }
 
-.projects_with_photos__navi__list__item {
+.projects_with_photos__navi__list__item, .projects_with_photos__navi__list__disc_one {
     width: 5px;
     height: 5px;
     list-style-image: url(assets/img/list-style.svg);
+    opacity: 0.6;
 }
 
 .projects_with_photos__navi__list__item:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
-.projects_with_photos__navi__list__item:nth-of-type(1), .projects_with_photos__navi__list__item:nth-of-type(5) {
+.projects_with_photos__navi__list__item__left, .projects_with_photos__navi__list__item__right {
     list-style: none;
     padding-top: 1%;
 }
 
-.projects_with_photos__navi__list__item:nth-of-type(1):hover, .projects_with_photos__navi__list__item:nth-of-type(5):hover {
+.projects_with_photos__navi__list__item__left:hover, .projects_with_photos__navi__list__item__right:hover {
     transform: scale(1.2);
 }
 
-.projects_with_photos__navi__list__item:nth-of-type(2) {
-    margin-left: 38%;
+.projects_with_photos__navi__list__disc_one {
+    margin-left: 19%;
 }
 
 .projects_with_photos__slider {

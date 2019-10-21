@@ -47,20 +47,20 @@
     margin: 0 auto;
     background: linear-gradient(to bottom, 
     rgb(19,19,19) 0%, 
-    rgb(19,19,19) 17.95%, 
-    rgb(255,255,255) 16.98%, 
-    rgb(255,255,255) 43.7%, 
-    rgb(19,19,19) 43.6%, 
-    rgb(19,19,19) 52.13%, 
-    rgb(255,255,255) 50%,
-    rgb(255,255,255) 57.9%, 
-    rgb(19,19,19) 57.5%, 
-    rgb(19,19,19) 75%, 
-    rgb(255,255,255) 73%, 
+    rgb(19,19,19) 18.19%, 
+    rgb(255,255,255) 18.19%, 
+    rgb(255,255,255) 42.94%,  
+    rgb(19,19,19) 42.94%, 
+    rgb(19,19,19) 51.51%, 
+    rgb(255,255,255) 51.51%,
+    rgb(255,255,255) 57.4%, 
+    rgb(19,19,19) 57.4%, 
+    rgb(19,19,19) 74.5%, 
+    rgb(255,255,255) 74.5%,  
     rgb(255,255,255) 90%, 
     rgba(19, 19, 19, 0.95) 90%, 
     rgba(19, 19, 19, 0.95) 98.67%,
-    rgb(19, 19, 19) 90%, 
+    rgb(19, 19, 19) 98.67%, 
     rgb(19, 19, 19) 100%);
 }
 
@@ -982,7 +982,9 @@ header {
     list-style: disc;
 }
 
-.design_project__projects__figure__figcaption__span_price {
+.design_project__projects__figure__figcaption__price_first,
+.design_project__projects__figure__figcaption__price_second,
+.design_project__projects__figure__figcaption__price_third {
     width: 228px;
     height: 54px;
     background: #E3B873;
@@ -998,15 +1000,15 @@ header {
     margin: 5% 20% 0 0;
 }
 
-.design_project__projects__figure__figcaption_first > .design_project__projects__figure__figcaption__span_price {
+.design_project__projects__figure__figcaption__price_first {
     margin-top: 9%;
 }
 
-.design_project__projects__figure__figcaption_second > .design_project__projects__figure__figcaption__span_price {
+.design_project__projects__figure__figcaption__price_second {
     margin-top: 11%;
 }
 
-.design_project__projects__figure__figcaption_third > .design_project__projects__figure__figcaption__span_price {
+.design_project__projects__figure__figcaption__price_third {
     margin-top: 13%;
 }
 
@@ -1558,6 +1560,11 @@ footer > .nav {
         font-size: 1.3em;
     }
 
+    .projects_with_photos__text_block__completed__projects > img {
+        padding-bottom: 1.5%;
+        padding-left: 9%;    
+    }
+
     .projects_with_photos__text_block__completed__data {
         width: 730px;
         margin: 0;
@@ -1626,6 +1633,7 @@ footer > .nav {
         top: 86%;
         left: 5.7%;
         display: flex;
+        position: absolute;
     }
 
     .types_of_repair {
@@ -1656,7 +1664,7 @@ footer > .nav {
     }
 
     .types_of_repair__data_form > label {
-        color: #FFFFFF;
+        color: #959595;
     }
 
     .types_of_repair__data_form__input__name,
@@ -1669,6 +1677,10 @@ footer > .nav {
     .types_of_repair__data_form__submit {
         border-bottom: none;
         background: #E3B873;
+    }
+
+    .types_of_repair__data_form .checkbox {
+        color: #FFFFFF;
     }
 
     .types_of_repair__data_form .checkmark {
@@ -2211,22 +2223,24 @@ footer > .nav {
         left: 0;    
     }
 
-    .design_project__projects__figure__figcaption__span_price {
+    .design_project__projects__figure__figcaption__price_first,
+    .design_project__projects__figure__figcaption__price_second,
+    .design_project__projects__figure__figcaption__price_third {
         height: 40px;
         width: 190px;   
         font-size: 1em;
         padding-left: 14%;
     }
 
-    .design_project__projects__figure__figcaption__span_price:nth-of-type(1) {
+    .design_project__projects__figure__figcaption__price_first {
         margin-top: 5%;
     }
 
-    .design_project__projects__figure__figcaption__span_price:nth-of-type(2) {
+    .design_project__projects__figure__figcaption__price_second {
         margin-top: 2%;
     }
 
-    .design_project__projects__figure__figcaption__span_price:nth-of-type(3) {
+    .design_project__projects__figure__figcaption__price_third {
         margin-top: 22%;
     }
 
